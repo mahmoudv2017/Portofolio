@@ -17,7 +17,7 @@ var gulp = require('gulp'),
         livereload.listen()
 
         return watch('stage/html/**/*.pug' , () => {
-            vinyl.src('stage/html/**/*.pug')
+            vinyl.src('stage/html/*.pug')
             .pipe(pug({ pretty : true }))
             .pipe(gulp.dest('Dist'))
             .pipe(livereload())

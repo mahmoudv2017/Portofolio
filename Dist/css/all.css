@@ -5,6 +5,7 @@
   position: absolute;
   inset: 0;
   transition: all 0.5ms;
+  z-index: 10;
 }
 .main-div::after {
   content: "";
@@ -35,7 +36,7 @@
   border-radius: 50%;
   padding: 15px;
   right: -2%;
-  top: 50%;
+  top: 45%;
   color: #e9c7c7;
   transform: scale(0);
   z-index: 1000;
@@ -50,10 +51,19 @@
 
 .btton {
   position: absolute;
+  display: flex;
   cursor: pointer;
-  right: 50%;
-  color: #fff;
-  top: 14px;
+  align-items: center;
+  font-weight: bold;
+  font-size: larger;
+  gap: 15px;
+  right: 1%;
+  color: white;
+  top: 5%;
+}
+.btton img {
+  height: 40px;
+  width: 40px;
 }
 
 .host-data {
@@ -86,8 +96,8 @@
   100% {
     bottom: 9%;
     top: 9%;
-    left: 0%;
-    right: 8%;
+    left: -10%;
+    right: 30%;
     border-radius: 0 35px 35px 0;
   }
 }
@@ -126,4 +136,28 @@
 
 body {
   overflow-x: hidden;
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  right: 15%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 20vh;
+}
+.sidebar-container ul {
+  font-size: 30px;
+}
+.sidebar-container ul li {
+  margin: 50px 0;
+}
+.sidebar-container ul li a {
+  text-decoration: none;
+  color: darkcyan;
 }

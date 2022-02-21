@@ -10,15 +10,13 @@ $default-color : #fff;
 
 .main-div {
 	background-image: url(./static/mad_here-wallpaper-1920x1080.jpg);
-
 	background-size: cover;
-
     background-color: rgb(71, 72, 73);
-	
 	position: absolute;
-	
 	inset: 0;
 	transition: all .500ms;
+
+	z-index: 10;
 	&::after {
 		content: '';
 		visibility: hidden;
@@ -53,7 +51,7 @@ $default-color : #fff;
 	
 	padding: 15px;
 	right: -2%;
-    top: 50%;
+    top: 45%;
 	color: #e9c7c7;
 	transform: scale(0);
 	z-index: 1000;
@@ -68,11 +66,20 @@ $default-color : #fff;
 }
 .btton {
 	position: absolute;
+    display: flex;
     cursor: pointer;
-	right: 50%;
-    color: $default-color;
-    
-	top: 14px;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+    gap: 15px;
+    right: 1%;
+    color: white;
+    top: 5%;
+
+	img{
+		height: 40px;
+		width: 40px;
+	}
 }
 
 
@@ -123,8 +130,8 @@ $default-color : #fff;
 	100% {
 		bottom: 9%;
 		top: 9%;
-		left: 0%;
-		right: 8%;
+		left: -10%;
+		right: 30%;
         
 		border-radius: 0 35px 35px 0;
 	}
