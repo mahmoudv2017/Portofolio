@@ -10,12 +10,9 @@ html(lang="en")
         title #{pageTitle}
     body 
         .main-div 
-            .host-data
-                .name-div 
-                    h1 Mahmoud Hesham Elbermbaly 
-                .desc-div 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti ducimus nobis perferendis, eum sit?
+            include pug/layouts/host-data
             .btton click me
-            .exit-btn exit
+            .exit-btn
+                img(src="css/static/icons/close.svg", alt="", srcset="")
 
     include pug/layouts/scripts
