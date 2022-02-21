@@ -90,6 +90,7 @@ $default-color : #fff;
     left: 5%;
 	animation: scaler 500ms ease-in-out ;
 	animation-fill-mode: forwards;
+	text-transform: capitalize;
 	
     .name-div{
         font-size: 14px;

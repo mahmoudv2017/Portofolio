@@ -15,14 +15,51 @@
         font-size: 30px;
        
         li{
-
+            position: relative;
             margin: 50px 0;
+            width: fit-content;
             a{
                 text-decoration: none;
-                color: darkcyan;
+                color: #008b8b;
+                transition: all .5s;
+     
+                
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left: 0%;
+                    min-width: none;
+                    width: 0%;
+                    max-width: 100%;
+                    top: 100%;
+                    bottom: -10%;
+                    border-radius: 35px;
+                    background-color: #02c9c9;
+                }
+
+                &:hover{
+                    color: #02c9c9;
+                    &:after{
+                        animation: liner 500ms ease-in-out;
+                        animation-fill-mode: forwards;
+                    }
+                }
             }
         }
         
     }
     
+}
+
+
+
+@keyframes liner{
+    from{
+        width : 0%;
+    }
+    to{
+        width: 100%;
+        
+    }
 }

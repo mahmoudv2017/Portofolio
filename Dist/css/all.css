@@ -72,6 +72,7 @@
   left: 5%;
   animation: scaler 500ms ease-in-out;
   animation-fill-mode: forwards;
+  text-transform: capitalize;
 }
 .host-data .name-div {
   font-size: 14px;
@@ -155,9 +156,40 @@ body {
   font-size: 30px;
 }
 .sidebar-container ul li {
+  position: relative;
   margin: 50px 0;
+  width: fit-content;
 }
 .sidebar-container ul li a {
   text-decoration: none;
-  color: darkcyan;
+  color: #008b8b;
+  transition: all 0.5s;
+}
+.sidebar-container ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  min-width: none;
+  width: 0%;
+  max-width: 100%;
+  top: 100%;
+  bottom: -10%;
+  border-radius: 35px;
+  background-color: #02c9c9;
+}
+.sidebar-container ul li a:hover {
+  color: #02c9c9;
+}
+.sidebar-container ul li a:hover:after {
+  animation: liner 500ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes liner {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }

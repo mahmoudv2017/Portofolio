@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
     minify = require('gulp-minify'),
     livereload = require('gulp-livereload'),
-    css_sass = require('sass-css-stream')
+    css_sass = require('sass-css-stream'),
+    sourceMap = require('gulp-sourcemaps')
     
 
 
@@ -31,6 +32,7 @@ var gulp = require('gulp'),
         return watch('stage/css/**/*.scss' , () => {
             gulp.src('stage/css/**/*.scss')
             .pipe(sass())
+            .pipe(sourceMap.write('.'))
             .pipe(concat('all.css'))
             .pipe(gulp.dest('Dist/css'))
             .pipe(livereload())
