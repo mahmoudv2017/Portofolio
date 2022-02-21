@@ -1,0 +1,21 @@
+doctype html
+
+-var pageTitle = 'HomePage'
+html(lang="en")
+    head
+        
+        include pug/layouts/meta
+
+        include pug/layouts/styles
+        title #{pageTitle}
+    body 
+        .main-div 
+            .host-data
+                .name-div 
+                    h1 Mahmoud Hesham Elbermbaly 
+                .desc-div 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti ducimus nobis perferendis, eum sit?
+            .btton click me
+            .exit-btn exit
+
+    include pug/layouts/scripts

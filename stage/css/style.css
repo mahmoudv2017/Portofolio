@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+}
+
+:root{
+    --animation-maximize : maximize 500ms;
+}
+
+.main-div{
+    background-image: url('./red-dead-redemption-2-pc-requirements.jpg');
+    background-size: cover;
+    
+   
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    transition: all .500ms;
+    
+
+    
+}
+
+.main-div::after{
+
+    content: '';
+    display: none;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(2px);
+}
+
+.main-div.animating::after , 
+.animating .exit-btn{
+    display: block;
+    
+}
+
+.main-div.animating{
+    overflow-x: initial;
+    /* animation: shrink 1s ease-in-out forwards, maximize 2s ease-in-out forwards; to cahin animation 1 then 2*/ 
+    animation: shrink 500ms ease-in-out forwards;
+}
+
+.main-div.maximize::after , 
+.maximize .exit-btn{
+    /* display: none; */
+    transform: scale(0);
+    
+}
+
+.main-div.maximize{
+    overflow-x: initial;
+    animation:  maximize .5s ;
+    animation-fill-mode: forwards;  
+}
+
+
+.exit-btn{
+
+    position: absolute;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    right: -2%;
+    top: 50%;
+    display: none;
+    color: #e9c7c7;
+    transform: scale(1);
+    z-index: 10000;
+    background-color: #c97839;
+    border: none;
+
+}
+
+.btton{
+    position: relative;
+    right: -50%;
+    top: 14px;
+}
+
+ @keyframes shrink{
+     0%{
+        bottom: 0%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        border-radius:0; 
+     }
+    100% {
+        bottom: 9%;
+        top: 9%;
+        left: 0%;
+        right: 8%;
+        border-radius:0 35px 35px 0;
+    }
+} 
+
+@keyframes maximize{
+
+      0% {
+        bottom: 9%;
+        top: 9%;
+        left: 0%;
+        right: 8%;
+        border-radius:0 35px 35px 0;
+    }  
+    100% {
+        bottom: 0%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        border-radius:0; 
+    }
+} 
+
+
+

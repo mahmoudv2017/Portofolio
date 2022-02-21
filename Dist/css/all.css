@@ -1,0 +1,114 @@
+.main-div {
+  background-image: url(./static/mad_here-wallpaper-1920x1080.jpg);
+  background-size: cover;
+  background-color: #474849;
+  position: absolute;
+  inset: 0;
+  transition: all 0.5ms;
+}
+.main-div::after {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+}
+
+.main-div.animating {
+  animation: shrink 500ms ease-in-out forwards;
+}
+.main-div.animating:after {
+  visibility: visible;
+}
+.main-div.animating .exit-btn {
+  transform: scale(1);
+}
+
+.main-div.maximize {
+  animation: maximize 100ms;
+  animation-fill-mode: forwards;
+}
+
+.exit-btn {
+  position: absolute;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: large;
+  font-weight: bold;
+  right: -2%;
+  top: 50%;
+  color: #e9c7c7;
+  transform: scale(0);
+  z-index: 1000;
+  background-color: #c97839;
+  border: none;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.btton {
+  position: absolute;
+  cursor: pointer;
+  right: 50%;
+  color: #fff;
+  top: 14px;
+}
+
+.host-data {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.host-data .name-div {
+  font-size: 14px;
+  font-style: italic;
+  color: #e9c7c7;
+  padding: 14px 0;
+  font-weight: bold;
+}
+.host-data .desc-div {
+  color: #fff;
+}
+
+@keyframes shrink {
+  0% {
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    visibility: visible;
+    border-radius: 0;
+  }
+  100% {
+    bottom: 9%;
+    top: 9%;
+    left: 0%;
+    right: 8%;
+    border-radius: 0 35px 35px 0;
+  }
+}
+@keyframes maximize {
+  0% {
+    bottom: 9%;
+    top: 9%;
+    left: 0%;
+    right: 8%;
+    border-radius: 0 35px 35px 0;
+  }
+  100% {
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    border-radius: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
