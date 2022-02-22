@@ -55,7 +55,10 @@ var swiper = new Swiper('.swiper', {
 $('.link-child').each((index ,el) => {
     $(el).on('click' , () => {
         maximize()
-        swiper.slideTo(index, 500, false)
+        
+        swiper.slideTo(index, 300, false) 
+        
+        
     })
 });
 
