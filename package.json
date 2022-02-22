@@ -23,6 +23,7 @@
     "sass": "^1.49.8",
     "sass-css-stream": "^1.0.0",
     "static-server": "^2.2.1",
+    "swiper": "^8.0.6",
     "uglify": "^0.1.5",
     "vinyl": "^2.2.1",
     "vinyl-fs": "^3.0.3"

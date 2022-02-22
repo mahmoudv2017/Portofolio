@@ -1,0 +1,29 @@
+.swiper{
+    position: absolute !important;
+    inset: 0;
+    &:after {
+    	content: '';
+    	visibility: hidden;
+    	position: absolute;
+    	inset: 0;
+    	backdrop-filter: blur(2px);
+    }
+
+    transition: all .5s;
+}
+
+
+.animating .swiper{
+    border-radius: 0 35px 35px 0;
+}
+
+.swiper-slide{
+    background-color: grey;
+}
+
+.home{
+    background-image: url(./static/wolf.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}

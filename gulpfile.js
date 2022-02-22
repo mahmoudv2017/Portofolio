@@ -31,9 +31,10 @@ var gulp = require('gulp'),
 
         return watch('stage/css/**/*.scss' , () => {
             gulp.src('stage/css/**/*.scss')
-            .pipe(sass())
-            .pipe(sourceMap.write('.'))
+            .pipe(sass({outputStyle: 'compressed'}))
+            .pipe(sourceMap.init())
             .pipe(concat('all.css'))
+            .pipe(sourceMap.write('.'))
             .pipe(gulp.dest('Dist/css'))
             .pipe(livereload())
         })

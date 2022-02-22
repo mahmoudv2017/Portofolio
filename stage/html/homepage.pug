@@ -10,12 +10,8 @@ html(lang="en")
         title #{pageTitle}
     body 
         include pug/layouts/sidebar
-        .main-div 
-            include pug/layouts/host-data
-            .btton
-                | Menu
-                img(src="css/static/icons/menu.svg") 
-            .exit-btn
-                img(src="css/static/icons/close.svg", alt="", srcset="")
+
+        include pug/pages/home_div
+        
         
     include pug/layouts/scripts
