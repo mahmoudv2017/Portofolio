@@ -4,6 +4,7 @@
 var swiper = new Swiper('.swiper', {
     
     direction: "vertical",
+    speed : 500,
 
     pagination: {
       el: ".swiper-pagination",
@@ -13,6 +14,14 @@ var swiper = new Swiper('.swiper', {
     mousewheel: {
         invert: false,
       },
+
+
+
+  effect: 'cards',
+  cardsEffect: {
+    slideShadows: false,
+  },
+
 
     
 

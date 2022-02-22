@@ -40,7 +40,7 @@ $('.link-child').each((index ,el) => {
     $(el).on('click' , () => {
         maximize()
    
-        swiper.slideTo(index, 300, false) 
+        swiper.slideTo(index, 600, false) 
         
         
     })

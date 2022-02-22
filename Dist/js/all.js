@@ -40,7 +40,7 @@ $('.link-child').each((index ,el) => {
     $(el).on('click' , () => {
         maximize()
    
-        swiper.slideTo(index, 300, false) 
+        swiper.slideTo(index, 600, false) 
         
         
     })
@@ -54,6 +54,7 @@ $('.link-child').each((index ,el) => {
 var swiper = new Swiper('.swiper', {
     
     direction: "vertical",
+    speed : 500,
 
     pagination: {
       el: ".swiper-pagination",
@@ -63,6 +64,14 @@ var swiper = new Swiper('.swiper', {
     mousewheel: {
         invert: false,
       },
+
+
+
+  effect: 'cards',
+  cardsEffect: {
+    slideShadows: false,
+  },
+
 
     
 
