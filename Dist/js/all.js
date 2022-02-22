@@ -32,6 +32,25 @@ document.querySelector('.exit-btn').addEventListener('click' , function () {
 })
 
 
+
+
+
+
+$('.link-child').each((index ,el) => {
+    $(el).on('click' , () => {
+        maximize()
+   
+        swiper.slideTo(index, 300, false) 
+        
+        
+    })
+});
+
+
+
+
+
+
 var swiper = new Swiper('.swiper', {
     
     direction: "vertical",
@@ -49,21 +68,3 @@ var swiper = new Swiper('.swiper', {
 
 
   });
-
-
-
-$('.link-child').each((index ,el) => {
-    $(el).on('click' , () => {
-        maximize()
-        
-        swiper.slideTo(index, 300, false) 
-        
-        
-    })
-});
-
-
-
-
-
-

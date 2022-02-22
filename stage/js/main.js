@@ -32,30 +32,14 @@ document.querySelector('.exit-btn').addEventListener('click' , function () {
 })
 
 
-var swiper = new Swiper('.swiper', {
-    
-    direction: "vertical",
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    mousewheel: {
-        invert: false,
-      },
-
-    
-
-
-  });
 
 
 
 $('.link-child').each((index ,el) => {
     $(el).on('click' , () => {
         maximize()
-        
+   
         swiper.slideTo(index, 300, false) 
         
         

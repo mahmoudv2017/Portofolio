@@ -36,7 +36,7 @@ $default-color : #fff;
 		animation-fill-mode: forwards;
 	}
 
-	animation: shrink 500ms ease-in-out forwards;
+	animation: shrink 400ms ease-in-out forwards;
 }
 
 .main-div.maximize {
@@ -86,27 +86,6 @@ $default-color : #fff;
 
 
 
-.host-data{
-    position: absolute;
-    top: 40%;
-    left: 5%;
-	animation: scaler 500ms ease-in-out ;
-	animation-fill-mode: forwards;
-	text-transform: capitalize;
-	
-    .name-div{
-        font-size: 14px;
-        font-style: italic;
-        color: #e9c7c7;
-        padding: 14px 0;
-        font-weight: bold;
-    }
-
-    .desc-div{
-        color: $default-color;
-    }
-   
-}
 
 
 

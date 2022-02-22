@@ -1,0 +1,62 @@
+.host-data{
+    
+    .name-div{
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        right: 0%;
+    }
+
+    .name{
+        color: #fff;
+        font-style: italic;
+        font-size: 80px;
+        width: 50%;
+        animation: glow .8s ease-in-out infinite alternate;
+    }
+        
+    
+
+    .desc-div{
+        position: absolute;
+        top: 58%;
+        left: 4%;
+        color: #fff;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 34px;
+        text-shadow: 0 0 20px rgb(131, 131, 131), 0 0 30px rgb(131, 131, 131), 0 0 40px rgb(131, 131, 131), 0 0 50px rgb(131, 131, 131), 0 0 60px rgb(131, 131, 131), 0 0 70px rgb(131, 131, 131), 0 0 80px rgb(131, 131, 131);
+
+        font-family: "Roboto Serif",sans-serif;
+    }
+}
+
+
+// .home{
+//     background-image: url(./static/wolf.jpg);
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// }
+
+
+@keyframes floatey{
+    from{
+        transform: translateY(3px);
+    }
+    to{
+        transform: translateY(-3px);
+      
+
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(131, 131, 131), 0 0 20px rgb(131, 131, 131), 0 0 30px gray, 0 0 40px gray, 0 0 50px #838587, 0 0 60px #838587, 0 0 70px #838587;
+    }
+    
+    to {
+        text-shadow: 0 0 20px rgb(131, 131, 131), 0 0 30px rgb(131, 131, 131), 0 0 40px rgb(131, 131, 131), 0 0 50px rgb(131, 131, 131), 0 0 60px rgb(131, 131, 131), 0 0 70px rgb(131, 131, 131), 0 0 80px rgb(131, 131, 131);
+    }
+}
