@@ -1,0 +1,189 @@
+.aboutme{
+    background-color: #fdcb6e;
+    position: relative;
+    .main-area{
+        position: absolute;
+        top: 15%;
+        right: 0%;
+        left: 0%;
+      
+
+        .title{
+            position: relative;
+            font-weight: bold;
+            
+        }
+
+        .desc{
+            position: relative;
+            margin-top: 2%;
+            font-size: 23px;
+            text-align: center;
+            width: 40%;
+            
+        }
+    }
+
+
+
+    .secondary-area{
+
+        position: relative;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        
+        .title{
+            font-size: 50px;
+            position: relative;
+            &:after{
+                position: absolute;
+                content: "";
+                inset: 0;
+                background-color: #fdcb6e;
+                
+
+            }
+
+            
+        }
+
+        
+
+        .images{
+            margin-top: 3%;
+
+            img{
+
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                padding: 0 5px;
+
+                &.express{
+                    animation: floateyer 500ms ease-in-out infinite alternate ;
+
+                }
+
+                &.django{
+                    animation: floateyer 500ms  infinite alternate ;
+                    animation-delay: 300ms;
+                }
+
+                &.laravel{
+                    animation: floateyer 500ms infinite alternate ;
+                    animation-delay: 500ms;
+
+                }
+
+
+                
+               
+
+            }
+
+            &:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                bottom: 0%;
+                right: 35%;
+                left: 35%;
+                background-color: #fdcb6e;
+                
+
+            }
+
+            
+        }
+    }
+}
+
+
+.swiper-slide-active{
+
+    .main-area{
+
+        .title{
+            animation: wiper-title 500ms ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .desc{
+            animation: wiper-right 500ms ease-out;
+            animation-fill-mode: forwards;
+        }
+        
+
+    } 
+
+    .secondary-area{
+
+        .title:after{
+            animation: wiper 1000ms ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .images:after{
+            animation: wiper-up 800ms ease-out;
+            animation-fill-mode: forwards;
+        }
+        
+
+    } 
+} 
+
+
+@keyframes wiper{
+    from {
+        left: -10%;
+    }
+    to{
+        left: 100%
+    }
+}
+
+
+@keyframes wiper-title{
+    from {
+        left: -10%;
+    }
+    to{
+        left: 50%
+    }
+}
+
+@keyframes wiper-right{
+    from {
+        left: 200%;
+
+    }
+    to{
+        left: 30%;
+    }
+}
+
+@keyframes wiper-up{
+    from {
+        top: 0%;
+       
+    }
+    to{
+        top: 100%;
+     
+    }
+}
+
+
+
+
+@keyframes floateyer{
+    from {
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}

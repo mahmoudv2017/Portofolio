@@ -54,7 +54,8 @@ $('.link-child').each((index ,el) => {
 var swiper = new Swiper('.swiper', {
     
     direction: "vertical",
-    speed : 500,
+    initialSlide : 3,
+    speed : 400,
 
     pagination: {
       el: ".swiper-pagination",
@@ -67,10 +68,10 @@ var swiper = new Swiper('.swiper', {
 
 
 
-  effect: 'cards',
-  cardsEffect: {
-    slideShadows: false,
-  },
+  // effect: 'cards',
+  // cardsEffect: {
+  //   slideShadows: false,
+  // },
 
 
     

@@ -1,0 +1,38 @@
+.contact{
+    position: relative;
+
+    .content{
+
+        .contact-info{
+
+            position: absolute;
+            width: 100%;
+            top: 20%;
+            .title{
+                position: relative;
+                font-size: 150px;
+                font-weight: bold;
+                text-align: center;
+                color: #fff;
+                top: 10%;
+        
+            }
+    
+            .gmail{
+                position: relative;
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                color: #fff;
+                top: 15%;
+           
+            }
+
+        }
+        
+       
+         
+
+    }
+
+}
