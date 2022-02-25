@@ -4,7 +4,7 @@
 var swiper = new Swiper('.swiper', {
     
     direction: "vertical",
-    initialSlide : 3,
+    initialSlide : 0,
     speed : 400,
 
     pagination: {

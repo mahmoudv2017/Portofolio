@@ -1,6 +1,6 @@
 doctype html
 
--var pageTitle = 'HomePage'
+-var pageTitle = 'PORTFOLIO'
 html(lang="en")
     head
         
@@ -9,6 +9,10 @@ html(lang="en")
         include pug/layouts/styles
         title #{pageTitle}
     body 
+
+        .stars
+            - for (i = 1; i <= 30; i++)
+                .star
         include pug/layouts/sidebar
 
         include pug/components/home_div
