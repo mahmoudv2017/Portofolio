@@ -8,7 +8,7 @@
         top: 21%;
         .title{
             position: absolute;
-            font-size: 150px;
+            font-size: 12em;
             font-weight: bold;
             text-align: center;
             background-color: #4158D0;
@@ -17,17 +17,17 @@
             -webkit-text-fill-color: transparent;
             left: 0;
             right: 0;
-            top: 5%;
+            top: 11%;
     
         }
 
         .gmail{
             position: absolute;
-            font-size: 40px;
+            font-size: 3em;
             font-weight: bold;
             text-align: center;
             color: #fff;
-            top: 70%;
+            top: 93%;
             right: 0;
             left: 0;
         
@@ -37,8 +37,11 @@
 
     .bttons{
         position: absolute;
-        top: 50%;
-        left: 40%;
+        top: 57%;
+        display: flex;
+        left: 0;
+        right: 0;
+        justify-content: center;
         .social-media{
             li{
                 display: inline-block;
@@ -133,10 +136,6 @@
         top: 0%;
         opacity: 1;
     }
-
-}
-
-@keyframes up_away{
 
 }
 

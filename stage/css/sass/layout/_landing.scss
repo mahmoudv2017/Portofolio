@@ -10,12 +10,11 @@ $default-color : #fff;
 
 .main-div {
 	
-  
 	position: absolute;
 	inset: 0;
 	transition: all .500ms;
-
 	z-index: 10;
+
 	&::after {
 		content: '';
 		visibility: hidden;
@@ -26,6 +25,9 @@ $default-color : #fff;
 	}
 }
 .main-div.animating {
+	
+
+
     &:after{
 		border-radius: 0 35px 35px 0;
         visibility: visible;
@@ -34,6 +36,10 @@ $default-color : #fff;
         
         animation: scaler 500ms ease-in-out ;
 		animation-fill-mode: forwards;
+	}
+
+	.btton{
+		display: none;
 	}
 
 	animation: shrink 500ms ease-in-out forwards;
@@ -48,21 +54,20 @@ $default-color : #fff;
 .exit-btn {
 	position: absolute;
 	border-radius: 50%;
-	
-	
+
 	padding: 15px;
 	right: -2%;
-    top: 45%;
+	top: 45%;
 	color: #e9c7c7;
 	transform: scale(0);
 	z-index: 1000;
 	background-color: #c97839;
 	border: none;
-    transition: all 200ms ;
-    cursor: pointer;
+	transition: all 200ms;
+	cursor: pointer;
 
-	img{
-		width: 50px;
+	img {
+	width: 50px;
 	}
 }
 .btton {
@@ -103,19 +108,17 @@ $default-color : #fff;
 
 @keyframes shrink {
 	0% {
-		bottom: 0%;
-		top: 0%;
-		left: 0%;
-		right: 0%;
+		
         visibility: visible;
 		border-radius: 0;
+		
 	}
 	100% {
 		bottom: 9%;
-		top: 9%;
+		top: 10%;
 		left: -10%;
 		right: 30%;
-        
+		
 		border-radius: 0 50px 35px 0;
 	}
 }

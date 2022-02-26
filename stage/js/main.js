@@ -46,8 +46,8 @@ $('.link-child').each((index ,el) => {
     })
 });
 
-let logo = document.querySelector('.logo')
-document.onmousemove = e => {
-    console.log({x : e.clientX})
-    logo.style.transform.translateX += e.clientX
-}
+// let logo = document.querySelector('.logo')
+// document.onmousemove = e => {
+//     console.log({x : e.clientX})
+//     logo.style.transform.translateX += e.clientX
+// }
