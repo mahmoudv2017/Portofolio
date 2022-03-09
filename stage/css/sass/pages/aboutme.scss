@@ -8,20 +8,22 @@
         top: 15%;
         right: 0%;
         left: 0%;
-      
 
         .title{
             position: relative;
             font-weight: bold;
             text-align: center;
-            
+            opacity: 0;
+            transform: translateY(30px);
         }
 
         .desc{
             position: relative;
             margin-top: 2%;
             font-size: 23px;
+            opacity: 0;
             text-align: center;
+            transform: translateY(30px);
             padding: 0 30%;
             
         }
@@ -114,15 +116,15 @@
 
     .main-area{
 
-        .title{
-            animation: wiper-title 500ms ease-out;
+        .title , .desc{
+            animation: wiper-title 500ms ease-in-out;
             animation-fill-mode: forwards;
         }
 
-        .desc{
-            animation: wiper-right 500ms ease-out;
-            animation-fill-mode: forwards;
-        }
+        // .desc{
+        //     animation: wiper-right 500ms ease-out;
+        //     animation-fill-mode: forwards;
+        // }
         
 
     } 
@@ -156,10 +158,12 @@
 
 @keyframes wiper-title{
     from {
-        left: -100%;
+        transform: translateY(30px);
+        opacity: 0;
     }
     to{
-        left: 0%
+        transform: translateY(6%);
+        opacity: 1;
     }
 }
 
