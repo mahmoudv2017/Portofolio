@@ -58,7 +58,7 @@ $('.link-child').each((index ,el) => {
 var swiper = new Swiper('.swiper', {
     
     direction: "vertical",
-    initialSlide : 0,
+    initialSlide : 1,
     speed : 400,
 
     pagination: {

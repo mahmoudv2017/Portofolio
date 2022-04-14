@@ -2,10 +2,23 @@ $animation-maximize: maximize 100ms;
 $default-color: #fff;
 
 .home {
+
+
     position: relative;
-  
+    display: flex;
+    align-items: center;
+
+    .container{
+      max-width: 100%;
+      max-height: 90%;
+    }
     .background {
         height: 118% !important;
+    }
+
+    .pic{
+      position: absolute;
+      right: 18%;
     }
 
     .logo {
@@ -30,19 +43,29 @@ $default-color: #fff;
         display: flex;
         flex-flow: column;
         gap: 1em;
+        float: left;
           .name-div {
             top: 31%;
             left: 0;
-            text-align: center;
+           // text-align: center;
             right: 0%;
           }
 
         .name {
           color: #fff;
-          font-style: italic;
-          font-size: 4em;
-          letter-spacing: .1em;
-          text-shadow: 0 0 10px #FFFFFF; 
+       //   font-style: italic;
+          font-size: 2.5em;
+       //   letter-spacing: .1em;
+//  text-shadow: 0 0 10px #FFFFFF;
+         
+
+          span{
+            font-family: sans-serif;
+            text-transform: capitalize;
+            color: #3795cd;
+            font-style: italic;
+          }
+         
         }
 
         .desc-div {
@@ -51,9 +74,9 @@ $default-color: #fff;
           right: 0;
           color: #fff;
           font-style: italic;
-          text-align: center;
+        //  text-align: center;
           font-weight: 600;
-          font-size: 4em;
+          font-size: 2.3em;
           letter-spacing: .1em;
           text-shadow: 0 0 10px #fff;
           font-family: "Roboto Serif",sans-serif;
