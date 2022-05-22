@@ -17,27 +17,79 @@
             -webkit-text-fill-color: transparent;
             left: 0;
             right: 0;
-            top: 11%;
+            top: -48%;
     
         }
 
-        .gmail{
-            position: absolute;
-            font-size: 3em;
-            font-weight: bold;
-            text-align: center;
-            color: #fff;
-            top: 93%;
-            right: 0;
-            left: 0;
-        
+        .container-gmail{
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 319%;
+            column-gap: 25%;
+            padding-inline: 30%;
+            top: 40%;
+            .gmail{
+                position: relative;
+                border-radius: 35px;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                display: grid;
+                grid-template-rows: 50%;
+                row-gap: 0%;
+                align-items: center;
+                background-color: #fff;
+    
+                >.title{
+                    font-size: larger;
+                    font-weight: bolder;
+                    text-transform: capitalize;
+                    position: relative;
+                    top: 0%;
+                }
+    
+                >.mail{
+                    
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    padding: 5px;
+                    position: relative;
+                    overflow-wrap: anywhere;
+                    
+                }
+            
+            }
+    
+            .number{
+                position: relative;
+                border-radius: 35px;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                display: grid;
+                grid-template-rows: 50%;
+                row-gap: 0%;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+    
+                >.title{
+                    font-size: larger;
+                    font-weight: bolder;
+                    text-transform: capitalize;
+                    position: relative;
+                    top: 0%;
+                }
+    
+            }
         }
-
+        
     }
 
     .bttons{
         position: absolute;
-        top: 57%;
+        top: 82%;
         display: flex;
         left: 0;
         right: 0;
