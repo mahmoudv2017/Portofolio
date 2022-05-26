@@ -158,6 +158,13 @@
                         }
                     }
 
+                    &.react_prog{
+                        &:after{
+                        
+                            background-color: rgb(255, 89, 214);
+                        }
+                    }
+
                     &:after{
                         content: "";
                         position: absolute;
@@ -240,6 +247,15 @@
                         background-color: lightcoral;
                     }
                 }
+
+                &.react_prog{
+                    &:after{
+                        transform: translateX(30%) ;
+                        background-color: rgb(255, 89, 214);
+                    }
+                }
+
+                
             } 
         }
     } 
