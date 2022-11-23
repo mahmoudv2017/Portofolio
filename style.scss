@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 1.5rem;
+        list-style: none;
+        margin-right: 2rem;
+    }
+}
+
+// i mean fuck man where do i start
+
+.section_1{
+
+    height: 64vh;
+
+    .header_img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 36vh;
+        background-image: url(../media/media-file-code-900x500.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .info{
+
+        position: absolute;
+        right: 13vw;
+        display: flex;
+        top: 23vh;
+        flex-direction: column;
+        row-gap: 9vh;
+        .header{
+            color: white;
+            font-size: 3.5vw;
+         
+        }
+    
+        .job{
+            color: white;
+
+            font-weight: bolder;
+            border: 2px solid white;
+            padding: 15px;
+            width: fit-content;
+            font-size: 2vw;
+        }
+    }
+   
+
+} 
+
+
+// i mean its alright
+.section_2{
+
+    background-color: hsl(0deg, 0%, 11%);
+    padding: 40px;
+    /* font-size: 2vw; */
+    color: #e1e7ec;
+
+    h1{
+        font-size: 5vw;
+    }
+    
+    a{
+        font-size: 2vw;
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+
+    a::before{
+        position: absolute;
+        inset: 0;
+
+        top: 48px;
+        content: " ";
+        border-bottom: 2px solid white;
+    }
+
+    .skills{
+        margin-top: 5vh;
+        text-transform: capitalize;
+        p{
+            font-size: 3vw;
+            margin-bottom: 3vh;
+        }
+        ul{
+            list-style: inside;
+            font-size: 1.5vw;
+        }
+    }
+   
+}
+
+
+.section_3{
+    background-color: hsl(0deg, 0%, 11%);
+    padding: 40px;
+    /* font-size: 2vw; */
+    color: #e1e7ec;
+
+    h1{
+        font-size: 5vw;
+    }
+    
+    .desc{
+        font-size: 2vw;
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+
+    h2{
+        font-size: 2.5vw;
+    }
+
+    p{
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+
+    .projects{
+        margin-top: 6vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card{
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2vh;
+        }
+    }
+}
+
+
+
+.section_4{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: .5fr;
+
+    img{
+        width: 100%;
+    }
+}
